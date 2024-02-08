@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Blog Website</title>
+</head>
+<body>
+  <h1>Welcome to the Blog</h1>
+
+  <div class="posts">
+    <% posts.forEach(post => { %>
+      <div class="post">
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+      </div>
+    <% }); %>
+  </div>
+
+  <a href="/new">Write a New Post</a>
+</body>
+</html>
